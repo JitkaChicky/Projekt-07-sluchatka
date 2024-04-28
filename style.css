@@ -15,5 +15,332 @@ font-weight: 700;
 */
 
 /* -------------------------------------------------- */
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+.wrap{
+    max-width: 1140px;
+    margin: auto;
+}
+.logo{
+        width: 10em; 
+        padding-top: 20px;
+        margin: auto;
+}
+
+.mobilhlavicka{
+    display: flex;
+    flex-direction: column;
+}
+
+.hlavicka-vlevo{
+    text-align: center;
+}
+
+.hlavicka-vpravo{
+flex-grow: 1;
+}
+
+.menu li{
+    display: inline;  
+}
+
+.menu{
+    padding: 0 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-tlacitka{
+ align-self: flex-end;
+}
+
+.tlacitko-primarni,
+.tlacitko-sekundarni{
+    font-size: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tlacitko-primarni{
+    background-color: #3498db;
+    border: none;
+}
+
+.tlacitko-primarni a{
+    color: white;
+}
+
+.tlacitko-sekundarni{
+    border: solid rgba(0, 0, 0, 0.397) 0.1px;
+}
+
+button a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.uvod{
+    background-color: #f5f5f5;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.banner{
+    padding: 0 20px;
+}
+
+.menu a{
+    font-size: 13px;
+    color:#959595;
+    text-decoration: none;
+}
+
+.tlacitko-velke{
+    font-size: 16px;
+    background-color: #3498db;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tlacitko-velke a{
+color: white;
+}
+
+h1{
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.upoutavka{
+    color:#a5a5a5;
+    margin-bottom: 20px;
+}
+
+img{
+ width: 100%;  
+ display: block;
+}
+
+.vlastnost {
+    display: flex;
+    border: solid #a5a5a577 0.5px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.obrazek{
+    width:100px;
+    margin: 20px 15px;
+}
+
+.obsah{
+    margin-bottom: 20px;
+}
+
+.vlastnost a,
+.minitext{
+    font-size: 11px;
+}
+
+.paticka{
+    background-color: #252525;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.copyright{
+    color:#959595;
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.paticka-menu{
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.paticka-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.paticka-menu li{
+    display: inline-block; 
+}
+
+@media (min-width: 481px) {
 
 
+.mobilhlavicka{
+    flex-direction: row;
+}
+
+.hlavicka-vpravo{
+    align-self: center;
+}
+
+.menu-tlacitka{
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.tlacitko-primarni{
+    margin-right: 5px;
+}
+.menu li{
+    display: inline;
+    
+}
+
+.vlastnost a,
+.minitext{
+    font-size: 13px;
+}
+
+.tlacitko-primarni,
+.tlacitko-sekundarni{
+    padding: 10px 15px;
+}
+
+.tlacitko-velke{
+    padding: 20px 30px;
+}
+
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.vlastnosti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0;  
+}
+
+.vlastnost{
+    flex-basis: 48%;
+    padding: 0;
+    margin:5px 0;
+    padding-right: 20px;
+}
+}
+
+@media (min-width: 769px) {
+.uvod{
+    margin-bottom: 0;
+}
+
+.hlavicka{
+    display: flex;
+}
+
+.hlavicka-vlevo{
+    flex-grow: 4;
+}
+
+.logo{
+    margin: 50px;
+    padding: 0;
+}
+
+.mobilhlavicka{
+    flex-grow: 1;
+}
+h1{
+    margin-top: 0;
+}
+.banner{
+    display: flex;
+    min-height: 600px;
+    position: relative;
+    padding: 0;
+}
+
+.banner-text{
+    max-width: 422px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.upoutavka{
+    font-size: 18px;
+}
+
+.banner-foto img{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    right:0;
+    bottom: 0;
+}
+.vlastnosti{
+    margin: 50px 0;
+}
+.vlastnost{
+    margin: 15px 0;
+    flex-basis: 45%;
+    padding: 30px 30px 30px 0;
+ }
+
+.obrazek{
+    width: 100px;
+    margin: 20px 30px;
+}
+.obsah p{
+    font-size: 15px;
+}
+.paticka{
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 0;
+    margin: auto;
+}
+.wrap1{
+    background-color: #252525;
+}
+.paticka-menu{
+ justify-content: flex-end;
+ flex-grow: 1;
+ margin-right:50px;
+}
+
+.paticka-menu li{
+    margin:0 10px;
+    font-size: 13px;
+}
+
+.copyright{
+    text-align: left;
+    margin:0;
+    margin-left: 50px;
+    font-size: 13px;
+}
+
+}
